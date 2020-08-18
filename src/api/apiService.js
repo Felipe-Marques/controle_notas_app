@@ -26,9 +26,9 @@ const GRADE_VALIDATION = [
 
 const getAllGrades = async () => {
   if (API_URL) {
-    const resource = await axios.get(API_URL);
+    let resource = await axios.get(API_URL);
   } else {
-    const resource = await axios.get(API_HEROKU);
+    let resource = await axios.get(API_HEROKU);
   }
 
   const grades = resource.data.grades.map((grade) => {
