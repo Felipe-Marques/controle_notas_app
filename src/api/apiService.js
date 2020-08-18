@@ -1,7 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://192.168.1.180:3001/grade/';
-const API_HEROKU = 'https://controle-backend.herokuapp.com/grade/';
+const API_URL = 'https://controle-backend.herokuapp.com/grade/';
 
 const GRADE_VALIDATION = [
   {
@@ -25,11 +24,7 @@ const GRADE_VALIDATION = [
 ];
 
 const getAllGrades = async () => {
-  if (API_URL) {
-    let resource = await axios.get(API_URL);
-  } else {
-    let resource = await axios.get(API_HEROKU);
-  }
+  const resource = await axios.get(API_URL);
 
   const grades = resource.data.grades.map((grade) => {
     const { student, subject, type } = grade;
