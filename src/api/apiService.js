@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://controle-backend.herokuapp.com/grade/';
+const API_URL = 'https://controle-backend.herokuapp.com/grade';
 
 const GRADE_VALIDATION = [
   {
