@@ -18,3 +18,7 @@ Aluno: Felipe Marques.
 ## Imagem do Projeto
 
 ![Controle de Notas](assets/print_app_notas.png)
+
+## :octocat: Deploy:
+
+[Heroku](https://controle-notas-frontend.herokuapp.com/)
